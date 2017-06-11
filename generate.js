@@ -6,66 +6,40 @@ color.RGB.prototype.hexaa = function () {
 	var alphaString = Math.round(this._alpha * 255).toString(16);
 	return "#" + this.hex().substr(1, 6) + "00".substr(0, 2 - alphaString.length) + alphaString;
 };
+function mix(a, b, x) {
+	return a + (b - a) * x;
+}
+// mixing with gamma correction
+function mixG(gamma, a, b, x) {
+	return Math.pow(mix(Matn.pow(a, 1 / gamma), Math.pow(b, 1 / gamma), x), gamma);
+}
+function cmix(c1, c2, p) {
+	const r1 = mixG(2.2, c1.r(), c2.r(), p);
+	const g1 = mixG(2.2, c1.g(), c2.g(), p);
+	const b1 = mixG(2.2, c1.b(), c2.b(), p);
+	return (new color.RGB(r1, g1, b1));
+}
 
+function shades(begin, end, levels) {
+	const a = []
+	for (let j = 0; j <= levels; j++) {
+		a.push(cmix(begin, end, j / levels));
+	}
+	return a;
+}
+function shades3(a, b, c, l) {
+	return shades(a, b, l).concat(shades(b, c, l).slice(1));
+}
 function invert(c) {
 	return c.lightness(1 - c.lightness()).rgb();
 }
 
-// colors
-const gray = [
-	"#f8f9fa",
-	"#f1f3f5",
-	"#e9ecef",
-	"#dee2e6",
-	"#ced4da",
-	"#adb5bd",
-	"#9DA5AD",
-	"#868e96",
-	"#495057",
-	"#343a40",
-	"#212529"
-];
+// color in 11 shades
+const gray = shades3(...['#f8f9fa', '#adb5bd', '#212529'].map(color), 5);
+const red = shades3(...['#fff5f5', '#ff6b6b', '#c92a2a'].map(color), 5);
+const green = shades3(...["#ebfbee", "#51cf66", "#2b8a3e"].map(color), 5);
+const blue = shades3(...["#e8f7ff", "#329af0", "#1862ab"].map(color), 5);
 
-const red = [
-	"#fff5f5",
-	"#ffe3e3",
-	"#ffc9c9",
-	"#ffa8a8",
-	"#ff8787",
-	"#ff6b6b",
-	"#fa5252",
-	"#f03e3e",
-	"#e03131",
-	"#c92a2a"
-];
-
-const green = [
-	"#ebfbee",
-	"#d3f9d8",
-	"#b2f2bb",
-	"#8ce99a",
-	"#69db7c",
-	"#51cf66",
-	"#40c057",
-	"#37b24d",
-	"#2f9e44",
-	"#2b8a3e"
-];
-
-const blue = [
-	"#e8f7ff",
-	"#ccedff",
-	"#a3daff",
-	"#72c3fc",
-	"#4dadf7",
-	"#329af0",
-	"#228ae6",
-	"#1c7cd6",
-	"#1b6ec2",
-	"#1862ab"
-];
-
-// gray should have 11 shades, while red, green, blue and stresses should have 10 shades
 function generate(gray, red, green, blue, stresses) {
 	const bg = gray[1];
 	const fg = gray[8];
