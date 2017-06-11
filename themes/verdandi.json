@@ -9,6 +9,7 @@
 			"#dee2e6",
 			"#ced4da",
 			"#adb5bd",
+			"#9da5ad",
 			"#868e96",
 			"#495057",
 			"#343a40",
@@ -126,7 +127,7 @@
 			"name": "Comment",
 			"scope": "comment, punctuation.comment, punctuation.definition.comment",
 			"settings": {
-				"foreground": "#adb5bd"
+				"foreground": "#9da5ad"
 			}
 		},
 		{
@@ -163,7 +164,7 @@
 			"name": "User names",
 			"scope": "constant.character, constant.other,entity.name.function, entity.name.class, entity.other.inherited-class, entity.other.attribute-name, entity.name, entity.other.attribute-name, entity.other.attribute-name.html, support.type.property-name, entity.name.tag.table, meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
-				"foreground": "#495057"
+				"foreground": "#212529"
 			}
 		},
 		{
@@ -191,7 +192,7 @@
 			"name": "Preprocessor",
 			"scope": "meta.preprocessor",
 			"settings": {
-				"foreground": "#495057"
+				"foreground": "#212529"
 			}
 		},
 		{
@@ -219,7 +220,7 @@
 			"name": "Markdown Title Hash",
 			"scope": "punctuation.definition.heading.md, entity.name.type.md, beginning.punctuation",
 			"settings": {
-				"foreground": "#495057"
+				"foreground": "#212529"
 			}
 		},
 		{
@@ -242,14 +243,14 @@
 			"name": "Markdown link",
 			"scope": "markup.link, string.other.link.title, string.other.link.description, meta.link.inline, meta.image.inline",
 			"settings": {
-				"foreground": "#495057"
+				"foreground": "#212529"
 			}
 		},
 		{
 			"name": "Makefile Variables",
 			"scope": "variable.language.makefile, variable.other.makefile",
 			"settings": {
-				"foreground": "#495057"
+				"foreground": "#212529"
 			}
 		},
 		{
@@ -283,7 +284,7 @@
 			"name": "CSS Property",
 			"scope": "meta.property-name.css",
 			"settings": {
-				"foreground": "#495057"
+				"foreground": "#212529"
 			}
 		}
 	]

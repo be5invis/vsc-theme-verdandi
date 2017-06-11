@@ -19,9 +19,9 @@
 				"path": "./themes/verdandi.json"
 			},
 			{
-				"label": "Hildr",
+				"label": "Verdandi Alter",
 				"uiTheme": "vs-dark",
-				"path": "./themes/hildr.json"
+				"path": "./themes/verdandi-alter.json"
 			}
 		]
 	},

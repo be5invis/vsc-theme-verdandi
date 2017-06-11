@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const color = require("onecolor");
 
-color.RGB.prototype.hexaa = function() {
+color.RGB.prototype.hexaa = function () {
 	var alphaString = Math.round(this._alpha * 255).toString(16);
 	return "#" + this.hex().substr(1, 6) + "00".substr(0, 2 - alphaString.length) + alphaString;
 };
@@ -19,6 +19,7 @@ const gray = [
 	"#dee2e6",
 	"#ced4da",
 	"#adb5bd",
+	"#9DA5AD",
 	"#868e96",
 	"#495057",
 	"#343a40",
@@ -64,35 +65,36 @@ const blue = [
 	"#1862ab"
 ];
 
-function generate(gray, red, green, blue) {
+// gray should have 11 shades, while red, green, blue and stresses should have 10 shades
+function generate(gray, red, green, blue, stresses) {
 	const bg = gray[1];
-	const fg = gray[7];
-	const stress = blue[5];
+	const fg = gray[8];
+	const stress = stresses[5];
 	const border = gray[3];
 	// token settings
 	const keyword = {
 		fontStyle: "bold",
-		foreground: gray[9].hex()
+		foreground: gray[10].hex()
 	};
 	const operator = keyword;
 	const literal = {
-		foreground: gray[9].hex()
+		foreground: gray[10].hex()
 	};
 	const comment = {
-		foreground: gray[5].hex()
+		foreground: gray[6].hex()
 	};
 	const library = {
-		foreground: gray[9].hex()
+		foreground: gray[10].hex()
 	};
 	const quote = {
 		fontStyle: "italic",
-		foreground: gray[6].hex()
+		foreground: gray[7].hex()
 	};
 	const user = {
-		foreground: fg.hex()
+		foreground: gray[10].hex()
 	};
 	const punct = {
-		foreground: gray[6].hex()
+		foreground: gray[7].hex()
 	};
 	const invalid = {
 		foreground: red[7].hex()
@@ -118,8 +120,8 @@ function generate(gray, red, green, blue) {
 			"editorCursor.foreground": stress.hex(),
 			"editorLineNumber.foreground": gray[5].hex(),
 
-			"editor.selectionBackground": blue[2].hexaa(),
-			"editor.selectionHighlightBackground": blue[1].hexaa(),
+			"editor.selectionBackground": stresses[2].hexaa(),
+			"editor.selectionHighlightBackground": stresses[1].hexaa(),
 			"editor.inactiveSelectionBackground": gray[3].hexaa(),
 
 			"debugToolBar.background": gray[2].hexaa(),
@@ -131,9 +133,9 @@ function generate(gray, red, green, blue) {
 			"editorGroupHeader.tabsBackground": gray[2].hex(),
 			"tab.border": border.hex(),
 			"tab.inactiveBackground": gray[2].hex(),
-			"tab.inactiveForeground": gray[6].hex(),
+			"tab.inactiveForeground": gray[7].hex(),
 			"tab.activeBackground": gray[1].hex(),
-			"tab.activeForeground": gray[9].hex(),
+			"tab.activeForeground": gray[10].hex(),
 
 			"peekViewEditor.background": gray[3].alpha(1 / 3).hexaa(),
 			"peekViewTitle.background": gray[0].hexaa(),
@@ -151,36 +153,36 @@ function generate(gray, red, green, blue) {
 			"diffEditor.removedTextBackground": red[5].alpha(0.15).hexaa(),
 			"diffEditor.insertedTextBackground": green[5].alpha(0.1).hexaa(),
 
-			"sideBarTitle.foreground": gray[9].hex(),
+			"sideBarTitle.foreground": gray[10].hex(),
 			"sideBar.background": gray[2].hex(),
 			"sideBar.border": border.hex(),
 			"sideBarSectionHeader.background": gray[3].hex(),
 
-			"list.highlightForeground": blue[6].hex(),
+			"list.highlightForeground": stresses[6].hex(),
 			"list.hoverBackground": gray[3].hex(),
 			"list.inactiveSelectionBackground": gray[5].alpha(0.3).hexaa(),
 			"list.activeSelectionBackground": stress.alpha(0.25).hexaa(),
 			"list.focusBackground": stress.alpha(0.25).hexaa(),
-			"list.inactiveSelectionForeground": gray[9].hex(),
-			"list.activeSelectionForeground": gray[9].hex(),
-			"list.focusForeground": gray[9].hex(),
+			"list.inactiveSelectionForeground": gray[10].hex(),
+			"list.activeSelectionForeground": gray[10].hex(),
+			"list.focusForeground": gray[10].hex(),
 
 			"dropdown.background": gray[0].hex(),
 			"dropdown.border": border.hex(),
-			"dropdown.foreground": gray[7].hex(),
+			"dropdown.foreground": gray[8].hex(),
 
 			"input.background": gray[0].hex(),
 			"input.border": border.hex(),
-			"input.foreground": gray[7].hex(),
+			"input.foreground": gray[8].hex(),
 			"input.placeholderForeground": gray[5].hex(),
 
-			"button.background": blue[6].hex(),
-			"button.foreground": blue[0].hex(),
-			"button.hoverBackground": blue[7].hex(),
+			"button.background": stresses[6].hex(),
+			"button.foreground": stresses[0].hex(),
+			"button.hoverBackground": stresses[7].hex(),
 
 			"badge.background": stress.hex(),
 			"activityBar.background": gray[4].hex(),
-			"activityBar.foreground": gray[8].hex(),
+			"activityBar.foreground": gray[9].hex(),
 
 			"statusBar.background": gray[3].hex(),
 			"statusBar.foreground": fg.hex(),
@@ -315,14 +317,14 @@ function generate(gray, red, green, blue) {
 }
 
 fs.writeFileSync(
-	path.join(__dirname, "themes", "hildr.json"),
+	path.join(__dirname, "themes", "verdandi-alter.json"),
 	JSON.stringify(
-		generate(...[gray, red, green, blue].map(g => g.map(color).map(invert))),
+		generate(...[gray, red, green, blue, blue].map(g => g.map(color).map(invert))),
 		null,
 		"\t"
 	)
 );
 fs.writeFileSync(
 	path.join(__dirname, "themes", "verdandi.json"),
-	JSON.stringify(generate(...[gray, red, green, blue].map(g => g.map(color))), null, "\t")
+	JSON.stringify(generate(...[gray, red, green, blue, blue].map(g => g.map(color))), null, "\t")
 );
