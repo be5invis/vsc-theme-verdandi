@@ -1,0 +1,31 @@
+{
+	"name": "theme-verdandi",
+	"version": "1.0.0",
+	"publisher": "be5invis",
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"displayName": "Verdandi Theme",
+	"description": "Verdandi themes for VS Code.",
+	"categories": [
+		"Themes"
+	],
+	"icon": "images/icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Verdandi",
+				"uiTheme": "vs",
+				"path": "./themes/verdandi.json"
+			},
+			{
+				"label": "Hildr",
+				"uiTheme": "vs-dark",
+				"path": "./themes/hildr.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"onecolor": "^3.0.4"
+	}
+}
