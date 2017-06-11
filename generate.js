@@ -102,6 +102,12 @@ function generate(gray, red, green, blue) {
 	return {
 		$schema: "vscode://schemas/color-theme",
 		name: "Railgun",
+		palette: {
+			gray: gray.map(x => x.hex()),
+			red: red.map(x => x.hex()),
+			green: green.map(x => x.hex()),
+			blue: blue.map(x => x.hex())
+		},
 		colors: {
 			focusBorder: stress.hex(),
 			foreground: fg.hex(),
@@ -310,9 +316,13 @@ function generate(gray, red, green, blue) {
 
 fs.writeFileSync(
 	path.join(__dirname, "themes", "hildr.json"),
-	JSON.stringify(generate(...[gray, red, green, blue].map(g => g.map(color).map(invert))))
+	JSON.stringify(
+		generate(...[gray, red, green, blue].map(g => g.map(color).map(invert))),
+		null,
+		"\t"
+	)
 );
 fs.writeFileSync(
 	path.join(__dirname, "themes", "verdandi.json"),
-	JSON.stringify(generate(...[gray, red, green, blue].map(g => g.map(color))))
+	JSON.stringify(generate(...[gray, red, green, blue].map(g => g.map(color))), null, "\t")
 );
