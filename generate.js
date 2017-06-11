@@ -13,55 +13,55 @@ function invert(c) {
 
 // colors
 const gray = [
-	color("#f8f9fa"),
-	color("#f1f3f5"),
-	color("#e9ecef"),
-	color("#dee2e6"),
-	color("#ced4da"),
-	color("#adb5bd"),
-	color("#868e96"),
-	color("#495057"),
-	color("#343a40"),
-	color("#212529")
+	"#f8f9fa",
+	"#f1f3f5",
+	"#e9ecef",
+	"#dee2e6",
+	"#ced4da",
+	"#adb5bd",
+	"#868e96",
+	"#495057",
+	"#343a40",
+	"#212529"
 ];
 
 const red = [
-	color("#fff5f5"),
-	color("#ffe3e3"),
-	color("#ffc9c9"),
-	color("#ffa8a8"),
-	color("#ff8787"),
-	color("#ff6b6b"),
-	color("#fa5252"),
-	color("#f03e3e"),
-	color("#e03131"),
-	color("#c92a2a")
+	"#fff5f5",
+	"#ffe3e3",
+	"#ffc9c9",
+	"#ffa8a8",
+	"#ff8787",
+	"#ff6b6b",
+	"#fa5252",
+	"#f03e3e",
+	"#e03131",
+	"#c92a2a"
 ];
 
 const green = [
-	color("#ebfbee"),
-	color("#d3f9d8"),
-	color("#b2f2bb"),
-	color("#8ce99a"),
-	color("#69db7c"),
-	color("#51cf66"),
-	color("#40c057"),
-	color("#37b24d"),
-	color("#2f9e44"),
-	color("#2b8a3e")
+	"#ebfbee",
+	"#d3f9d8",
+	"#b2f2bb",
+	"#8ce99a",
+	"#69db7c",
+	"#51cf66",
+	"#40c057",
+	"#37b24d",
+	"#2f9e44",
+	"#2b8a3e"
 ];
 
 const blue = [
-	color("#e8f7ff"),
-	color("#ccedff"),
-	color("#a3daff"),
-	color("#72c3fc"),
-	color("#4dadf7"),
-	color("#329af0"),
-	color("#228ae6"),
-	color("#1c7cd6"),
-	color("#1b6ec2"),
-	color("#1862ab")
+	"#e8f7ff",
+	"#ccedff",
+	"#a3daff",
+	"#72c3fc",
+	"#4dadf7",
+	"#329af0",
+	"#228ae6",
+	"#1c7cd6",
+	"#1b6ec2",
+	"#1862ab"
 ];
 
 function generate(gray, red, green, blue) {
@@ -310,9 +310,9 @@ function generate(gray, red, green, blue) {
 
 fs.writeFileSync(
 	path.join(__dirname, "themes", "hildr.json"),
-	JSON.stringify(generate(gray.map(invert), red.map(invert), green.map(invert), blue.map(invert)))
+	JSON.stringify(generate(...[gray, red, green, blue].map(g => g.map(color).map(invert))))
 );
 fs.writeFileSync(
 	path.join(__dirname, "themes", "verdandi.json"),
-	JSON.stringify(generate(gray, red, green, blue))
+	JSON.stringify(generate(...[gray, red, green, blue].map(g => g.map(color))))
 );
