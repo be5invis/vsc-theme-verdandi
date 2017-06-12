@@ -1,0 +1,114 @@
+{
+	"folder": "folder-close-dark",
+	"file": "file-dark",
+	"folderExpanded": "folder-open-dark",
+	"fileExtensions": {
+		"txt": "text-dark",
+		"c": "c-dark",
+		"h": "h-dark",
+		"hpp": "hpp-dark",
+		"hh": "hpp-dark",
+		"hxx": "hpp-dark",
+		"cpp": "cpp-dark",
+		"cc": "cpp-dark",
+		"cxx": "cpp-dark",
+		"js": "js-dark",
+		"ts": "ts-dark",
+		"d.ts": "dts-dark",
+		"json": "json-dark"
+	},
+	"light": {
+		"folder": "folder-close-light",
+		"file": "file-light",
+		"folderExpanded": "folder-open-light",
+		"fileExtensions": {
+			"txt": "text-light",
+			"c": "c-light",
+			"h": "h-light",
+			"hpp": "hpp-light",
+			"hh": "hpp-light",
+			"hxx": "hpp-light",
+			"cpp": "cpp-light",
+			"cc": "cpp-light",
+			"cxx": "cpp-light",
+			"js": "js-light",
+			"ts": "ts-light",
+			"d.ts": "dts-light",
+			"json": "json-light"
+		}
+	},
+	"iconDefinitions": {
+		"folder-close-dark": {
+			"iconPath": "./icons/folder-close-dark.svg"
+		},
+		"folder-close-light": {
+			"iconPath": "./icons/folder-close-light.svg"
+		},
+		"file-dark": {
+			"iconPath": "./icons/file-dark.svg"
+		},
+		"file-light": {
+			"iconPath": "./icons/file-light.svg"
+		},
+		"folder-open-dark": {
+			"iconPath": "./icons/folder-open-dark.svg"
+		},
+		"folder-open-light": {
+			"iconPath": "./icons/folder-open-light.svg"
+		},
+		"text-dark": {
+			"iconPath": "./icons/text-dark.svg"
+		},
+		"text-light": {
+			"iconPath": "./icons/text-light.svg"
+		},
+		"c-dark": {
+			"iconPath": "./icons/c-dark.svg"
+		},
+		"c-light": {
+			"iconPath": "./icons/c-light.svg"
+		},
+		"h-dark": {
+			"iconPath": "./icons/h-dark.svg"
+		},
+		"h-light": {
+			"iconPath": "./icons/h-light.svg"
+		},
+		"hpp-dark": {
+			"iconPath": "./icons/hpp-dark.svg"
+		},
+		"hpp-light": {
+			"iconPath": "./icons/hpp-light.svg"
+		},
+		"cpp-dark": {
+			"iconPath": "./icons/cpp-dark.svg"
+		},
+		"cpp-light": {
+			"iconPath": "./icons/cpp-light.svg"
+		},
+		"js-dark": {
+			"iconPath": "./icons/js-dark.svg"
+		},
+		"js-light": {
+			"iconPath": "./icons/js-light.svg"
+		},
+		"ts-dark": {
+			"iconPath": "./icons/ts-dark.svg"
+		},
+		"ts-light": {
+			"iconPath": "./icons/ts-light.svg"
+		},
+		"dts-dark": {
+			"iconPath": "./icons/dts-dark.svg"
+		},
+		"dts-light": {
+			"iconPath": "./icons/dts-light.svg"
+		},
+		"json-dark": {
+			"iconPath": "./icons/json-dark.svg"
+		},
+		"json-light": {
+			"iconPath": "./icons/json-light.svg"
+		}
+	}
+}

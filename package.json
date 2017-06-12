@@ -23,9 +23,18 @@
 				"uiTheme": "vs-dark",
 				"path": "./themes/verdandi-alter.json"
 			}
+		],
+		"iconThemes": [
+			{
+				"id": "verdandi",
+				"label": "Verdandi",
+				"path": "./icons.json"
+			}
 		]
 	},
 	"devDependencies": {
 		"onecolor": "^3.0.4"
+	},
+	"dependencies": {
 	}
 }
