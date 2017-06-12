@@ -16,7 +16,7 @@ function omap(obj, f) {
 function generate(palette) {
 	const { gray, red, green, blue, stress: stresses } = palette;
 
-	const bg = gray[1];
+	const bg = gray[0];
 	const fg = gray[8];
 	const stress = stresses[5];
 	const border = gray[3];
@@ -60,7 +60,7 @@ function generate(palette) {
 			errorForeground: red[6].hex(),
 			"editor.background": bg.hex(),
 			"editor.foreground": fg.hex(),
-			"editor.lineHighlightBackground": gray[2].hex(),
+			"editor.lineHighlightBackground": gray[1].hex(),
 			"editorCursor.foreground": stress.hex(),
 			"editorLineNumber.foreground": gray[5].hex(),
 
@@ -73,12 +73,12 @@ function generate(palette) {
 			"editorSuggestWidget.background": bg.hexaa(),
 
 			"editorGroup.border": border.hex(),
-			"editorGroupHeader.noTabsBackground": gray[1].hex(),
+			"editorGroupHeader.noTabsBackground": bg.hex(),
 			"editorGroupHeader.tabsBackground": gray[2].hex(),
 			"tab.border": border.hex(),
 			"tab.inactiveBackground": gray[2].hex(),
 			"tab.inactiveForeground": gray[7].hex(),
-			"tab.activeBackground": gray[1].hex(),
+			"tab.activeBackground": bg.hex(),
 			"tab.activeForeground": gray[10].hex(),
 
 			"peekViewEditor.background": gray[3].alpha(1 / 3).hexaa(),
@@ -98,8 +98,7 @@ function generate(palette) {
 			"diffEditor.insertedTextBackground": green[5].alpha(0.1).hexaa(),
 
 			"sideBarTitle.foreground": gray[10].hex(),
-			"sideBar.background": gray[2].hex(),
-			"sideBar.border": border.hex(),
+			"sideBar.background": gray[1].hex(),
 			"sideBarSectionHeader.background": gray[3].hex(),
 
 			"list.highlightForeground": stresses[6].hex(),
