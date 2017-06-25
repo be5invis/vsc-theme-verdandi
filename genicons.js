@@ -24,8 +24,15 @@ module.exports = function genicons() {
 	function ext(x, icon) {
 		return define(["fileExtensions", x], icon || x);
 	}
+	function fn(x, icon) {
+		return define(["fileNames", x], icon || x);
+	}
+	function dir(x, icon) {
+		define(["folderNames", x], "folder-" + (icon || x) + "-close");
+		define(["folderNamesExpanded", x], "folder-" + (icon || x) + "-open");
+	}
 
-	recipe.call({ define, ext });
+	recipe.call({ define, ext, fn, dir });
 
 	const final = defs.dark;
 	final.light = defs.light;
@@ -34,7 +41,7 @@ module.exports = function genicons() {
 };
 
 function recipe() {
-	const { define, ext } = this;
+	const { define, ext, fn, dir } = this;
 
 	define(["folder"], "folder-close");
 	define(["file"], "file");
@@ -49,7 +56,30 @@ function recipe() {
 	ext("cc", "cpp");
 	ext("cxx", "cpp");
 	ext("js");
+	ext("md");
+	ext("mkd", "md");
+	ext("markdown", "md");
 	ext("ts");
 	ext("d.ts", "dts");
+	ext("py");
+	ext("rb");
+	ext("hs");
+	ext("idr");
 	ext("json");
+	ext("cs");
+	ext("fs");
+	ext("fsx", "fs");
+	ext("fsi", "fs");
+	ext("vb");
+	ext("otd", "json");
+
+	fn(".gitignore", "git");
+	fn("package.json", "npm");
+	fn("package-lock.json", "file-npm");
+	fn(".npmignore.json", "file-npm");
+
+	dir("test");
+	dir("tests", "test");
+	dir("spec", "test");
+	dir(".vscode", "vscode");
 }

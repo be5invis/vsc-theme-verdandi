@@ -1,2 +1,4 @@
-icons.ai
+.gitignore
+*.ai
+.vscode/*
 samples/*

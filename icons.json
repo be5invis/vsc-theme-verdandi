@@ -13,9 +13,40 @@
 		"cc": "cpp-dark",
 		"cxx": "cpp-dark",
 		"js": "js-dark",
+		"md": "md-dark",
+		"mkd": "md-dark",
+		"markdown": "md-dark",
 		"ts": "ts-dark",
 		"d.ts": "dts-dark",
-		"json": "json-dark"
+		"py": "py-dark",
+		"rb": "rb-dark",
+		"hs": "hs-dark",
+		"idr": "idr-dark",
+		"json": "json-dark",
+		"cs": "cs-dark",
+		"fs": "fs-dark",
+		"fsx": "fs-dark",
+		"fsi": "fs-dark",
+		"vb": "vb-dark",
+		"otd": "json-dark"
+	},
+	"fileNames": {
+		".gitignore": "git-dark",
+		"package.json": "npm-dark",
+		"package-lock.json": "file-npm-dark",
+		".npmignore.json": "file-npm-dark"
+	},
+	"folderNames": {
+		"test": "folder-test-close-dark",
+		"tests": "folder-test-close-dark",
+		"spec": "folder-test-close-dark",
+		".vscode": "folder-vscode-close-dark"
+	},
+	"folderNamesExpanded": {
+		"test": "folder-test-open-dark",
+		"tests": "folder-test-open-dark",
+		"spec": "folder-test-open-dark",
+		".vscode": "folder-vscode-open-dark"
 	},
 	"light": {
 		"folder": "folder-close-light",
@@ -32,9 +63,40 @@
 			"cc": "cpp-light",
 			"cxx": "cpp-light",
 			"js": "js-light",
+			"md": "md-light",
+			"mkd": "md-light",
+			"markdown": "md-light",
 			"ts": "ts-light",
 			"d.ts": "dts-light",
-			"json": "json-light"
+			"py": "py-light",
+			"rb": "rb-light",
+			"hs": "hs-light",
+			"idr": "idr-light",
+			"json": "json-light",
+			"cs": "cs-light",
+			"fs": "fs-light",
+			"fsx": "fs-light",
+			"fsi": "fs-light",
+			"vb": "vb-light",
+			"otd": "json-light"
+		},
+		"fileNames": {
+			".gitignore": "git-light",
+			"package.json": "npm-light",
+			"package-lock.json": "file-npm-light",
+			".npmignore.json": "file-npm-light"
+		},
+		"folderNames": {
+			"test": "folder-test-close-light",
+			"tests": "folder-test-close-light",
+			"spec": "folder-test-close-light",
+			".vscode": "folder-vscode-close-light"
+		},
+		"folderNamesExpanded": {
+			"test": "folder-test-open-light",
+			"tests": "folder-test-open-light",
+			"spec": "folder-test-open-light",
+			".vscode": "folder-vscode-open-light"
 		}
 	},
 	"iconDefinitions": {
@@ -92,6 +154,12 @@
 		"js-light": {
 			"iconPath": "./icons/js-light.svg"
 		},
+		"md-dark": {
+			"iconPath": "./icons/md-dark.svg"
+		},
+		"md-light": {
+			"iconPath": "./icons/md-light.svg"
+		},
 		"ts-dark": {
 			"iconPath": "./icons/ts-dark.svg"
 		},
@@ -104,11 +172,95 @@
 		"dts-light": {
 			"iconPath": "./icons/dts-light.svg"
 		},
+		"py-dark": {
+			"iconPath": "./icons/py-dark.svg"
+		},
+		"py-light": {
+			"iconPath": "./icons/py-light.svg"
+		},
+		"rb-dark": {
+			"iconPath": "./icons/rb-dark.svg"
+		},
+		"rb-light": {
+			"iconPath": "./icons/rb-light.svg"
+		},
+		"hs-dark": {
+			"iconPath": "./icons/hs-dark.svg"
+		},
+		"hs-light": {
+			"iconPath": "./icons/hs-light.svg"
+		},
+		"idr-dark": {
+			"iconPath": "./icons/idr-dark.svg"
+		},
+		"idr-light": {
+			"iconPath": "./icons/idr-light.svg"
+		},
 		"json-dark": {
 			"iconPath": "./icons/json-dark.svg"
 		},
 		"json-light": {
 			"iconPath": "./icons/json-light.svg"
+		},
+		"cs-dark": {
+			"iconPath": "./icons/cs-dark.svg"
+		},
+		"cs-light": {
+			"iconPath": "./icons/cs-light.svg"
+		},
+		"fs-dark": {
+			"iconPath": "./icons/fs-dark.svg"
+		},
+		"fs-light": {
+			"iconPath": "./icons/fs-light.svg"
+		},
+		"vb-dark": {
+			"iconPath": "./icons/vb-dark.svg"
+		},
+		"vb-light": {
+			"iconPath": "./icons/vb-light.svg"
+		},
+		"git-dark": {
+			"iconPath": "./icons/git-dark.svg"
+		},
+		"git-light": {
+			"iconPath": "./icons/git-light.svg"
+		},
+		"npm-dark": {
+			"iconPath": "./icons/npm-dark.svg"
+		},
+		"npm-light": {
+			"iconPath": "./icons/npm-light.svg"
+		},
+		"file-npm-dark": {
+			"iconPath": "./icons/file-npm-dark.svg"
+		},
+		"file-npm-light": {
+			"iconPath": "./icons/file-npm-light.svg"
+		},
+		"folder-test-close-dark": {
+			"iconPath": "./icons/folder-test-close-dark.svg"
+		},
+		"folder-test-close-light": {
+			"iconPath": "./icons/folder-test-close-light.svg"
+		},
+		"folder-test-open-dark": {
+			"iconPath": "./icons/folder-test-open-dark.svg"
+		},
+		"folder-test-open-light": {
+			"iconPath": "./icons/folder-test-open-light.svg"
+		},
+		"folder-vscode-close-dark": {
+			"iconPath": "./icons/folder-vscode-close-dark.svg"
+		},
+		"folder-vscode-close-light": {
+			"iconPath": "./icons/folder-vscode-close-light.svg"
+		},
+		"folder-vscode-open-dark": {
+			"iconPath": "./icons/folder-vscode-open-dark.svg"
+		},
+		"folder-vscode-open-light": {
+			"iconPath": "./icons/folder-vscode-open-light.svg"
 		}
 	}
 }
