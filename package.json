@@ -1,6 +1,6 @@
 {
 	"name": "theme-verdandi",
-	"version": "1.5.0",
+	"version": "1.6.0",
 	"publisher": "be5invis",
 	"engines": {
 		"vscode": "^1.13.0"
@@ -14,7 +14,7 @@
 		"git":"https://github.com/be5invis/vsc-theme-verdandi"
 	},
 	"license": "MIT",
-	"icon": "images/icon.svg",
+	"icon": "images/icon.png",
 	"contributes": {
 		"themes": [
 			{

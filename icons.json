@@ -28,10 +28,21 @@
 		"fsx": "fs-dark",
 		"fsi": "fs-dark",
 		"vb": "vb-dark",
-		"otd": "json-dark"
+		"otd": "json-dark",
+		"make": "config-dark",
+		"html": "markup-dark",
+		"htm": "markup-dark",
+		"xml": "markup-dark",
+		"css": "css-dark",
+		"styl": "stylus-dark"
 	},
 	"fileNames": {
 		".gitignore": "git-dark",
+		".travis.yml": "travis-dark",
+		"appveyor.yml": "appveyor-dark",
+		".editorconfig": "config-dark",
+		".clang-format": "config-dark",
+		"makefile": "config-dark",
 		"package.json": "npm-dark",
 		"package-lock.json": "file-npm-dark",
 		".npmignore.json": "file-npm-dark"
@@ -78,10 +89,21 @@
 			"fsx": "fs-light",
 			"fsi": "fs-light",
 			"vb": "vb-light",
-			"otd": "json-light"
+			"otd": "json-light",
+			"make": "config-light",
+			"html": "markup-light",
+			"htm": "markup-light",
+			"xml": "markup-light",
+			"css": "css-light",
+			"styl": "stylus-light"
 		},
 		"fileNames": {
 			".gitignore": "git-light",
+			".travis.yml": "travis-light",
+			"appveyor.yml": "appveyor-light",
+			".editorconfig": "config-light",
+			".clang-format": "config-light",
+			"makefile": "config-light",
 			"package.json": "npm-light",
 			"package-lock.json": "file-npm-light",
 			".npmignore.json": "file-npm-light"
@@ -220,11 +242,47 @@
 		"vb-light": {
 			"iconPath": "./icons/vb-light.svg"
 		},
+		"config-dark": {
+			"iconPath": "./icons/config-dark.svg"
+		},
+		"config-light": {
+			"iconPath": "./icons/config-light.svg"
+		},
+		"markup-dark": {
+			"iconPath": "./icons/markup-dark.svg"
+		},
+		"markup-light": {
+			"iconPath": "./icons/markup-light.svg"
+		},
+		"css-dark": {
+			"iconPath": "./icons/css-dark.svg"
+		},
+		"css-light": {
+			"iconPath": "./icons/css-light.svg"
+		},
+		"stylus-dark": {
+			"iconPath": "./icons/stylus-dark.svg"
+		},
+		"stylus-light": {
+			"iconPath": "./icons/stylus-light.svg"
+		},
 		"git-dark": {
 			"iconPath": "./icons/git-dark.svg"
 		},
 		"git-light": {
 			"iconPath": "./icons/git-light.svg"
+		},
+		"travis-dark": {
+			"iconPath": "./icons/travis-dark.svg"
+		},
+		"travis-light": {
+			"iconPath": "./icons/travis-light.svg"
+		},
+		"appveyor-dark": {
+			"iconPath": "./icons/appveyor-dark.svg"
+		},
+		"appveyor-light": {
+			"iconPath": "./icons/appveyor-light.svg"
 		},
 		"npm-dark": {
 			"iconPath": "./icons/npm-dark.svg"

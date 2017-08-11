@@ -72,8 +72,19 @@ function recipe() {
 	ext("fsi", "fs");
 	ext("vb");
 	ext("otd", "json");
+	ext("make", "config");
+	ext("html", "markup");
+	ext("htm", "markup");
+	ext("xml", "markup");
+	ext("css", "css");
+	ext("styl", "stylus");
 
 	fn(".gitignore", "git");
+	fn(".travis.yml", "travis");
+	fn("appveyor.yml", "appveyor");
+	fn(".editorconfig", "config");
+	fn(".clang-format", "config");
+	fn("makefile", "config");
 	fn("package.json", "npm");
 	fn("package-lock.json", "file-npm");
 	fn(".npmignore.json", "file-npm");
