@@ -56,6 +56,7 @@ function recipe() {
 	ext("cc", "cpp");
 	ext("cxx", "cpp");
 	ext("js");
+	ext("mjs", "js");
 	ext("md");
 	ext("mkd", "md");
 	ext("markdown", "md");
