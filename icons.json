@@ -34,6 +34,7 @@
 		"html": "markup-dark",
 		"htm": "markup-dark",
 		"xml": "markup-dark",
+		"vue": "vue-dark",
 		"css": "css-dark",
 		"styl": "stylus-dark"
 	},
@@ -43,9 +44,13 @@
 		"appveyor.yml": "appveyor-dark",
 		".editorconfig": "config-dark",
 		".clang-format": "config-dark",
+		".esformatter": "config-js-dark",
+		".eslintrc": "config-js-dark",
+		".babelrc": "config-js-dark",
 		"makefile": "config-dark",
 		"package.json": "npm-dark",
 		"package-lock.json": "file-npm-dark",
+		".npmignore": "file-npm-dark",
 		".npmignore.json": "file-npm-dark"
 	},
 	"folderNames": {
@@ -96,6 +101,7 @@
 			"html": "markup-light",
 			"htm": "markup-light",
 			"xml": "markup-light",
+			"vue": "vue-light",
 			"css": "css-light",
 			"styl": "stylus-light"
 		},
@@ -105,9 +111,13 @@
 			"appveyor.yml": "appveyor-light",
 			".editorconfig": "config-light",
 			".clang-format": "config-light",
+			".esformatter": "config-js-light",
+			".eslintrc": "config-js-light",
+			".babelrc": "config-js-light",
 			"makefile": "config-light",
 			"package.json": "npm-light",
 			"package-lock.json": "file-npm-light",
+			".npmignore": "file-npm-light",
 			".npmignore.json": "file-npm-light"
 		},
 		"folderNames": {
@@ -256,6 +266,12 @@
 		"markup-light": {
 			"iconPath": "./icons/markup-light.svg"
 		},
+		"vue-dark": {
+			"iconPath": "./icons/vue-dark.svg"
+		},
+		"vue-light": {
+			"iconPath": "./icons/vue-light.svg"
+		},
 		"css-dark": {
 			"iconPath": "./icons/css-dark.svg"
 		},
@@ -285,6 +301,12 @@
 		},
 		"appveyor-light": {
 			"iconPath": "./icons/appveyor-light.svg"
+		},
+		"config-js-dark": {
+			"iconPath": "./icons/config-js-dark.svg"
+		},
+		"config-js-light": {
+			"iconPath": "./icons/config-js-light.svg"
 		},
 		"npm-dark": {
 			"iconPath": "./icons/npm-dark.svg"

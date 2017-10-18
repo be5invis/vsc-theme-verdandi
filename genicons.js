@@ -77,6 +77,7 @@ function recipe() {
 	ext("html", "markup");
 	ext("htm", "markup");
 	ext("xml", "markup");
+	ext("vue");
 	ext("css", "css");
 	ext("styl", "stylus");
 
@@ -85,9 +86,13 @@ function recipe() {
 	fn("appveyor.yml", "appveyor");
 	fn(".editorconfig", "config");
 	fn(".clang-format", "config");
+	fn(".esformatter", "config-js");
+	fn(".eslintrc", "config-js");
+	fn(".babelrc", "config-js");
 	fn("makefile", "config");
 	fn("package.json", "npm");
 	fn("package-lock.json", "file-npm");
+	fn(".npmignore", "file-npm");
 	fn(".npmignore.json", "file-npm");
 
 	dir("test");
