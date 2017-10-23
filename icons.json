@@ -2,8 +2,33 @@
 	"folder": "folder-close-dark",
 	"file": "file-dark",
 	"folderExpanded": "folder-open-dark",
+	"fileNames": {
+		"license": "license-dark",
+		"licence": "license-dark",
+		"copying": "license-dark",
+		"license.txt": "license-dark",
+		"license.md": "license-dark",
+		"copying.md": "license-dark",
+		"licence.txt": "license-dark",
+		"licence.md": "license-dark",
+		".gitignore": "git-dark",
+		".travis.yml": "travis-dark",
+		"appveyor.yml": "appveyor-dark",
+		".editorconfig": "config-dark",
+		".clang-format": "config-dark",
+		"makefile": "config-dark",
+		".esformatter": "config-js-dark",
+		".eslintrc": "config-js-dark",
+		".eslintignore": "config-js-dark",
+		".babelrc": "config-js-dark",
+		"package.json": "npm-dark",
+		"package-lock.json": "file-npm-dark",
+		".npmignore": "file-npm-dark",
+		".npmignore.json": "file-npm-dark"
+	},
 	"fileExtensions": {
 		"txt": "text-dark",
+		"log": "text-dark",
 		"c": "c-dark",
 		"h": "h-dark",
 		"hpp": "hpp-dark",
@@ -35,23 +60,28 @@
 		"htm": "markup-dark",
 		"xml": "markup-dark",
 		"vue": "vue-dark",
+		"toml": "toml-dark",
+		"tex": "tex-dark",
 		"css": "css-dark",
-		"styl": "stylus-dark"
-	},
-	"fileNames": {
-		".gitignore": "git-dark",
-		".travis.yml": "travis-dark",
-		"appveyor.yml": "appveyor-dark",
-		".editorconfig": "config-dark",
-		".clang-format": "config-dark",
-		".esformatter": "config-js-dark",
-		".eslintrc": "config-js-dark",
-		".babelrc": "config-js-dark",
-		"makefile": "config-dark",
-		"package.json": "npm-dark",
-		"package-lock.json": "file-npm-dark",
-		".npmignore": "file-npm-dark",
-		".npmignore.json": "file-npm-dark"
+		"styl": "stylus-dark",
+		"less": "less-dark",
+		"sass": "sass-dark",
+		"scss": "sass-dark",
+		"ttf": "font-dark",
+		"otf": "font-dark",
+		"ttc": "font-dark",
+		"woff": "font-dark",
+		"woff2": "font-dark",
+		"eot": "font-dark",
+		"zip": "archive-dark",
+		"7z": "archive-dark",
+		"rar": "archive-dark",
+		"tar.gz": "archive-dark",
+		"tgz": "archive-dark",
+		"tar.bzip2": "archive-dark",
+		"tbz": "archive-dark",
+		"tar.xz": "archive-dark",
+		"txz": "archive-dark"
 	},
 	"folderNames": {
 		"test": "folder-test-close-dark",
@@ -69,8 +99,33 @@
 		"folder": "folder-close-light",
 		"file": "file-light",
 		"folderExpanded": "folder-open-light",
+		"fileNames": {
+			"license": "license-light",
+			"licence": "license-light",
+			"copying": "license-light",
+			"license.txt": "license-light",
+			"license.md": "license-light",
+			"copying.md": "license-light",
+			"licence.txt": "license-light",
+			"licence.md": "license-light",
+			".gitignore": "git-light",
+			".travis.yml": "travis-light",
+			"appveyor.yml": "appveyor-light",
+			".editorconfig": "config-light",
+			".clang-format": "config-light",
+			"makefile": "config-light",
+			".esformatter": "config-js-light",
+			".eslintrc": "config-js-light",
+			".eslintignore": "config-js-light",
+			".babelrc": "config-js-light",
+			"package.json": "npm-light",
+			"package-lock.json": "file-npm-light",
+			".npmignore": "file-npm-light",
+			".npmignore.json": "file-npm-light"
+		},
 		"fileExtensions": {
 			"txt": "text-light",
+			"log": "text-light",
 			"c": "c-light",
 			"h": "h-light",
 			"hpp": "hpp-light",
@@ -102,23 +157,28 @@
 			"htm": "markup-light",
 			"xml": "markup-light",
 			"vue": "vue-light",
+			"toml": "toml-light",
+			"tex": "tex-light",
 			"css": "css-light",
-			"styl": "stylus-light"
-		},
-		"fileNames": {
-			".gitignore": "git-light",
-			".travis.yml": "travis-light",
-			"appveyor.yml": "appveyor-light",
-			".editorconfig": "config-light",
-			".clang-format": "config-light",
-			".esformatter": "config-js-light",
-			".eslintrc": "config-js-light",
-			".babelrc": "config-js-light",
-			"makefile": "config-light",
-			"package.json": "npm-light",
-			"package-lock.json": "file-npm-light",
-			".npmignore": "file-npm-light",
-			".npmignore.json": "file-npm-light"
+			"styl": "stylus-light",
+			"less": "less-light",
+			"sass": "sass-light",
+			"scss": "sass-light",
+			"ttf": "font-light",
+			"otf": "font-light",
+			"ttc": "font-light",
+			"woff": "font-light",
+			"woff2": "font-light",
+			"eot": "font-light",
+			"zip": "archive-light",
+			"7z": "archive-light",
+			"rar": "archive-light",
+			"tar.gz": "archive-light",
+			"tgz": "archive-light",
+			"tar.bzip2": "archive-light",
+			"tbz": "archive-light",
+			"tar.xz": "archive-light",
+			"txz": "archive-light"
 		},
 		"folderNames": {
 			"test": "folder-test-close-light",
@@ -151,6 +211,12 @@
 		},
 		"folder-open-light": {
 			"iconPath": "./icons/folder-open-light.svg"
+		},
+		"license-dark": {
+			"iconPath": "./icons/license-dark.svg"
+		},
+		"license-light": {
+			"iconPath": "./icons/license-light.svg"
 		},
 		"text-dark": {
 			"iconPath": "./icons/text-dark.svg"
@@ -272,6 +338,18 @@
 		"vue-light": {
 			"iconPath": "./icons/vue-light.svg"
 		},
+		"toml-dark": {
+			"iconPath": "./icons/toml-dark.svg"
+		},
+		"toml-light": {
+			"iconPath": "./icons/toml-light.svg"
+		},
+		"tex-dark": {
+			"iconPath": "./icons/tex-dark.svg"
+		},
+		"tex-light": {
+			"iconPath": "./icons/tex-light.svg"
+		},
 		"css-dark": {
 			"iconPath": "./icons/css-dark.svg"
 		},
@@ -283,6 +361,30 @@
 		},
 		"stylus-light": {
 			"iconPath": "./icons/stylus-light.svg"
+		},
+		"less-dark": {
+			"iconPath": "./icons/less-dark.svg"
+		},
+		"less-light": {
+			"iconPath": "./icons/less-light.svg"
+		},
+		"sass-dark": {
+			"iconPath": "./icons/sass-dark.svg"
+		},
+		"sass-light": {
+			"iconPath": "./icons/sass-light.svg"
+		},
+		"font-dark": {
+			"iconPath": "./icons/font-dark.svg"
+		},
+		"font-light": {
+			"iconPath": "./icons/font-light.svg"
+		},
+		"archive-dark": {
+			"iconPath": "./icons/archive-dark.svg"
+		},
+		"archive-light": {
+			"iconPath": "./icons/archive-light.svg"
 		},
 		"git-dark": {
 			"iconPath": "./icons/git-dark.svg"
