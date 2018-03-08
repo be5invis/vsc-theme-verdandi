@@ -76,6 +76,7 @@ function generate(palette) {
 			"editor.lineHighlightBackground": gray[1].hex(),
 			"editorCursor.foreground": stress.hex(),
 			"editorLineNumber.foreground": gray[5].hex(),
+			"editorActiveLineNumber.foreground": gray[10].hex(),
 
 			"editor.selectionBackground": stresses[2].hexaa(),
 			"editor.selectionHighlightBackground": stresses[1].hexaa(),
