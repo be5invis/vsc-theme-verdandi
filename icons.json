@@ -23,8 +23,15 @@
 		".babelrc": "config-js-dark",
 		"package.json": "npm-dark",
 		"package-lock.json": "file-npm-dark",
+		".npmrc": "file-npm-dark",
 		".npmignore": "file-npm-dark",
-		".npmignore.json": "file-npm-dark"
+		".npmignore.json": "file-npm-dark",
+		".prettierrc": "file-prettier-dark",
+		".prettierrc.yaml": "file-prettier-dark",
+		".prettierrc.yml": "file-prettier-dark",
+		".prettierrc.json": "file-prettier-dark",
+		".prettierrc.js": "file-prettier-dark",
+		"prettier.config.js": "file-prettier-dark"
 	},
 	"fileExtensions": {
 		"txt": "text-dark",
@@ -81,7 +88,15 @@
 		"tar.bzip2": "archive-dark",
 		"tbz": "archive-dark",
 		"tar.xz": "archive-dark",
-		"txz": "archive-dark"
+		"txz": "archive-dark",
+		"gif": "image-dark",
+		"jpg": "image-dark",
+		"jpeg": "image-dark",
+		"png": "image-dark",
+		"psd": "image-dark",
+		"svg": "image-vector-dark",
+		"ai": "image-vector-dark",
+		"sketch": "image-vector-dark"
 	},
 	"folderNames": {
 		"test": "folder-test-close-dark",
@@ -120,8 +135,15 @@
 			".babelrc": "config-js-light",
 			"package.json": "npm-light",
 			"package-lock.json": "file-npm-light",
+			".npmrc": "file-npm-light",
 			".npmignore": "file-npm-light",
-			".npmignore.json": "file-npm-light"
+			".npmignore.json": "file-npm-light",
+			".prettierrc": "file-prettier-light",
+			".prettierrc.yaml": "file-prettier-light",
+			".prettierrc.yml": "file-prettier-light",
+			".prettierrc.json": "file-prettier-light",
+			".prettierrc.js": "file-prettier-light",
+			"prettier.config.js": "file-prettier-light"
 		},
 		"fileExtensions": {
 			"txt": "text-light",
@@ -178,7 +200,15 @@
 			"tar.bzip2": "archive-light",
 			"tbz": "archive-light",
 			"tar.xz": "archive-light",
-			"txz": "archive-light"
+			"txz": "archive-light",
+			"gif": "image-light",
+			"jpg": "image-light",
+			"jpeg": "image-light",
+			"png": "image-light",
+			"psd": "image-light",
+			"svg": "image-vector-light",
+			"ai": "image-vector-light",
+			"sketch": "image-vector-light"
 		},
 		"folderNames": {
 			"test": "folder-test-close-light",
@@ -386,6 +416,18 @@
 		"archive-light": {
 			"iconPath": "./icons/archive-light.svg"
 		},
+		"image-dark": {
+			"iconPath": "./icons/image-dark.svg"
+		},
+		"image-light": {
+			"iconPath": "./icons/image-light.svg"
+		},
+		"image-vector-dark": {
+			"iconPath": "./icons/image-vector-dark.svg"
+		},
+		"image-vector-light": {
+			"iconPath": "./icons/image-vector-light.svg"
+		},
 		"git-dark": {
 			"iconPath": "./icons/git-dark.svg"
 		},
@@ -421,6 +463,12 @@
 		},
 		"file-npm-light": {
 			"iconPath": "./icons/file-npm-light.svg"
+		},
+		"file-prettier-dark": {
+			"iconPath": "./icons/file-prettier-dark.svg"
+		},
+		"file-prettier-light": {
+			"iconPath": "./icons/file-prettier-light.svg"
 		},
 		"folder-test-close-dark": {
 			"iconPath": "./icons/folder-test-close-dark.svg"

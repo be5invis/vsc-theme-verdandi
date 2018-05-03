@@ -112,6 +112,14 @@ function recipe() {
 	ext("tbz", "archive");
 	ext("tar.xz", "archive");
 	ext("txz", "archive");
+	ext("gif", "image");
+	ext("jpg", "image");
+	ext("jpeg", "image");
+	ext("png", "image");
+	ext("psd", "image");
+	ext("svg", "image-vector");
+	ext("ai", "image-vector");
+	ext("sketch", "image-vector");
 
 	fn(".gitignore", "git");
 	fn(".travis.yml", "travis");
@@ -125,8 +133,15 @@ function recipe() {
 	fn(".babelrc", "config-js");
 	fn("package.json", "npm");
 	fn("package-lock.json", "file-npm");
+	fn(".npmrc", "file-npm");
 	fn(".npmignore", "file-npm");
 	fn(".npmignore.json", "file-npm");
+	fn(".prettierrc", "file-prettier");
+	fn(".prettierrc.yaml", "file-prettier");
+	fn(".prettierrc.yml", "file-prettier");
+	fn(".prettierrc.json", "file-prettier");
+	fn(".prettierrc.js", "file-prettier");
+	fn("prettier.config.js", "file-prettier");
 
 	dir("test");
 	dir("tests", "test");
