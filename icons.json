@@ -31,7 +31,15 @@
 		".prettierrc.yml": "file-prettier-dark",
 		".prettierrc.json": "file-prettier-dark",
 		".prettierrc.js": "file-prettier-dark",
-		"prettier.config.js": "file-prettier-dark"
+		"prettier.config.js": "file-prettier-dark",
+		"test.ts": "ts-test-dark",
+		"tests.ts": "ts-test-dark",
+		"spec.ts": "ts-test-dark",
+		"specs.ts": "ts-test-dark",
+		"test.js": "js-test-dark",
+		"tests.js": "js-test-dark",
+		"spec.js": "js-test-dark",
+		"specs.js": "js-test-dark"
 	},
 	"fileExtensions": {
 		"txt": "text-dark",
@@ -143,7 +151,15 @@
 			".prettierrc.yml": "file-prettier-light",
 			".prettierrc.json": "file-prettier-light",
 			".prettierrc.js": "file-prettier-light",
-			"prettier.config.js": "file-prettier-light"
+			"prettier.config.js": "file-prettier-light",
+			"test.ts": "ts-test-light",
+			"tests.ts": "ts-test-light",
+			"spec.ts": "ts-test-light",
+			"specs.ts": "ts-test-light",
+			"test.js": "js-test-light",
+			"tests.js": "js-test-light",
+			"spec.js": "js-test-light",
+			"specs.js": "js-test-light"
 		},
 		"fileExtensions": {
 			"txt": "text-light",
@@ -469,6 +485,18 @@
 		},
 		"file-prettier-light": {
 			"iconPath": "./icons/file-prettier-light.svg"
+		},
+		"ts-test-dark": {
+			"iconPath": "./icons/ts-test-dark.svg"
+		},
+		"ts-test-light": {
+			"iconPath": "./icons/ts-test-light.svg"
+		},
+		"js-test-dark": {
+			"iconPath": "./icons/js-test-dark.svg"
+		},
+		"js-test-light": {
+			"iconPath": "./icons/js-test-light.svg"
 		},
 		"folder-test-close-dark": {
 			"iconPath": "./icons/folder-test-close-dark.svg"

@@ -32,7 +32,14 @@ module.exports = function genicons() {
 		define(["folderNamesExpanded", x], "folder-" + (icon || x) + "-open");
 	}
 
-	recipe.call({ define, ext, fn, dir });
+	function testfile(x, icon) {
+		fn("test." + x, (icon || x) + "-test");
+		fn("tests." + x, (icon || x) + "-test");
+		fn("spec." + x, (icon || x) + "-test");
+		fn("specs." + x, (icon || x) + "-test");
+	}
+
+	recipe.call({ define, ext, fn, dir, testfile });
 
 	const final = defs.dark;
 	final.light = defs.light;
@@ -41,7 +48,7 @@ module.exports = function genicons() {
 };
 
 function recipe() {
-	const { define, ext, fn, dir } = this;
+	const { define, ext, fn, dir, testfile } = this;
 
 	define(["folder"], "folder-close");
 	define(["file"], "file");
@@ -142,6 +149,9 @@ function recipe() {
 	fn(".prettierrc.json", "file-prettier");
 	fn(".prettierrc.js", "file-prettier");
 	fn("prettier.config.js", "file-prettier");
+
+	testfile("ts");
+	testfile("js");
 
 	dir("test");
 	dir("tests", "test");
