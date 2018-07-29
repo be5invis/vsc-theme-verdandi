@@ -1,6 +1,6 @@
 {
 	"name": "theme-verdandi",
-	"version": "1.8.2",
+	"version": "1.8.3",
 	"publisher": "be5invis",
 	"engines": {
 		"vscode": "^1.17.0"
@@ -39,5 +39,8 @@
 	"devDependencies": {
 		"onecolor": "^3.0.4"
 	},
-	"dependencies": {}
+	"dependencies": {},
+	"scripts": {
+		"prepack": "node generate"
+	}
 }
