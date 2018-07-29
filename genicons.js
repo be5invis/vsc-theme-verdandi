@@ -75,11 +75,13 @@ function recipe() {
 	ext("cc", "cpp");
 	ext("cxx", "cpp");
 	ext("js");
+	ext("jsx", "js");
 	ext("mjs", "js");
 	ext("md");
 	ext("mkd", "md");
 	ext("markdown", "md");
 	ext("ts");
+	ext("tsx", "ts");
 	ext("d.ts", "dts");
 	ext("py");
 	ext("rb");

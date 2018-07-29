@@ -1,6 +1,6 @@
 {
 	"name": "theme-verdandi",
-	"version": "1.8.1",
+	"version": "1.8.2",
 	"publisher": "be5invis",
 	"engines": {
 		"vscode": "^1.17.0"
