@@ -132,6 +132,11 @@ function generate(palette) {
 			"list.activeSelectionForeground": gray[10].hex(),
 			"list.focusForeground": gray[10].hex(),
 
+			"gitDecoration.modifiedResourceForeground": blue[8].hex(),
+			"gitDecoration.untrackedResourceForeground": green[8].hex(),
+			"gitDecoration.deletedResourceForeground": red[8].hex(),
+			"gitDecoration.conflictingResourceForeground": red[8].hex(),
+
 			"dropdown.background": gray[0].hex(),
 			"dropdown.border": border.hex(),
 			"dropdown.foreground": gray[8].hex(),
@@ -146,6 +151,7 @@ function generate(palette) {
 			"button.hoverBackground": stresses[7].hex(),
 
 			"badge.background": stress.hex(),
+			"badge.foreground": gray[2].hex(),
 			"activityBar.background": gray[4].hex(),
 			"activityBar.foreground": gray[9].hex(),
 
@@ -157,7 +163,17 @@ function generate(palette) {
 			"statusBar.debuggingForeground": fg.hex(),
 
 			"panel.border": border.hex(),
-			"panelTitle.activeBorder": stress.hex()
+			"panelTitle.activeBorder": stress.hex(),
+
+			"titleBar.activeBackground": gray[8].hex(),
+			"titleBar.activeForeground": gray[1].hex(),
+			"titleBar.inactiveBackground": gray[6].hex(),
+			"titleBar.inactiveForeground": gray[2].hex(),
+
+			"breadcrumb.foreground": comment.foreground,
+			"breadcrumb.focusForeground": quote.foreground,
+			"breadcrumb.activeSelectionForeground": quote.foreground,
+			"breadcrumbPicker.background": gray[1].hex()
 		},
 		tokenColors: [
 			{

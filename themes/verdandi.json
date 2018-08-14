@@ -116,6 +116,10 @@
 		"list.inactiveSelectionForeground": "#212529",
 		"list.activeSelectionForeground": "#212529",
 		"list.focusForeground": "#212529",
+		"gitDecoration.modifiedResourceForeground": "#2076c9",
+		"gitDecoration.untrackedResourceForeground": "#37a64b",
+		"gitDecoration.deletedResourceForeground": "#e33f3f",
+		"gitDecoration.conflictingResourceForeground": "#e33f3f",
 		"dropdown.background": "#f8f9fa",
 		"dropdown.border": "#cfd4d9",
 		"dropdown.foreground": "#51575e",
@@ -127,6 +131,7 @@
 		"button.foreground": "#e8f7ff",
 		"button.hoverBackground": "#2481da",
 		"badge.background": "#329af0",
+		"badge.foreground": "#dce0e4",
 		"activityBar.background": "#bfc6cd",
 		"activityBar.foreground": "#353a3f",
 		"statusBar.background": "#cfd4d9",
@@ -136,7 +141,15 @@
 		"statusBar.debuggingBackground": "#cfd4d9",
 		"statusBar.debuggingForeground": "#51575e",
 		"panel.border": "#cfd4d9",
-		"panelTitle.activeBorder": "#329af0"
+		"panelTitle.activeBorder": "#329af0",
+		"titleBar.activeBackground": "#51575e",
+		"titleBar.activeForeground": "#e9ecee",
+		"titleBar.inactiveBackground": "#939ba4",
+		"titleBar.inactiveForeground": "#dce0e4",
+		"breadcrumb.foreground": "#939ba4",
+		"breadcrumb.focusForeground": "#727981",
+		"breadcrumb.activeSelectionForeground": "#727981",
+		"breadcrumbPicker.background": "#e9ecee"
 	},
 	"tokenColors": [
 		{
