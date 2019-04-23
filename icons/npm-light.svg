@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.a,.b{fill:#aa302f;}.b{fill-rule:evenodd;}</style></defs><title>npm-light</title><rect class="a" x="8" y="7" width="1" height="2"/><path class="b" d="M1,5v6H6v1H9V11h6V5Zm5,5H5V7H4v3H2V6H6Zm8,0H13V7H12v3H11V7H10v3H8v1H7V6h7Z"/></svg>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 7H8V9H9V7Z" fill="#AA302F"/>
+<path d="M10.5 6H10V8H10.5V6Z" fill="#AA302F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 5V11H6V12H9V11H15V5H1ZM6 10H5V7H4V10H2V6H6V10ZM14 10H13V7H12V10H11V7H10V10H8V11H7V6H14V10Z" fill="#AA302F"/>
+</svg>

@@ -37,6 +37,10 @@ module.exports = function genicons() {
 		fn("tests." + x, (icon || x) + "-test");
 		fn("spec." + x, (icon || x) + "-test");
 		fn("specs." + x, (icon || x) + "-test");
+		ext("test." + x, (icon || x) + "-test");
+		ext("tests." + x, (icon || x) + "-test");
+		ext("spec." + x, (icon || x) + "-test");
+		ext("specs." + x, (icon || x) + "-test");
 	}
 
 	recipe.call({ define, ext, fn, dir, testfile });
@@ -85,6 +89,8 @@ function recipe() {
 	ext("d.ts", "dts");
 	ext("py");
 	ext("rb");
+	ext("rs", "rust");
+	ext("go");
 	ext("hs");
 	ext("idr");
 	ext("json");
@@ -129,9 +135,11 @@ function recipe() {
 	ext("svg", "image-vector");
 	ext("ai", "image-vector");
 	ext("sketch", "image-vector");
+	ext("fig", "image-vector");
 
 	fn(".gitignore", "git");
 	fn(".travis.yml", "travis");
+	fn("azure-pipelines.yml", "azure-pipelines");
 	fn("appveyor.yml", "appveyor");
 	fn(".editorconfig", "config");
 	fn(".clang-format", "config");
@@ -159,4 +167,5 @@ function recipe() {
 	dir("tests", "test");
 	dir("spec", "test");
 	dir(".vscode", "vscode");
+	dir(".circleci", "circleci");
 }

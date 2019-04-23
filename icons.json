@@ -13,6 +13,7 @@
 		"licence.md": "license-dark",
 		".gitignore": "git-dark",
 		".travis.yml": "travis-dark",
+		"azure-pipelines.yml": "azure-pipelines-dark",
 		"appveyor.yml": "appveyor-dark",
 		".editorconfig": "config-dark",
 		".clang-format": "config-dark",
@@ -63,6 +64,8 @@
 		"d.ts": "dts-dark",
 		"py": "py-dark",
 		"rb": "rb-dark",
+		"rs": "rust-dark",
+		"go": "go-dark",
 		"hs": "hs-dark",
 		"idr": "idr-dark",
 		"json": "json-dark",
@@ -106,19 +109,30 @@
 		"psd": "image-dark",
 		"svg": "image-vector-dark",
 		"ai": "image-vector-dark",
-		"sketch": "image-vector-dark"
+		"sketch": "image-vector-dark",
+		"fig": "image-vector-dark",
+		"test.ts": "ts-test-dark",
+		"tests.ts": "ts-test-dark",
+		"spec.ts": "ts-test-dark",
+		"specs.ts": "ts-test-dark",
+		"test.js": "js-test-dark",
+		"tests.js": "js-test-dark",
+		"spec.js": "js-test-dark",
+		"specs.js": "js-test-dark"
 	},
 	"folderNames": {
 		"test": "folder-test-close-dark",
 		"tests": "folder-test-close-dark",
 		"spec": "folder-test-close-dark",
-		".vscode": "folder-vscode-close-dark"
+		".vscode": "folder-vscode-close-dark",
+		".circleci": "folder-circleci-close-dark"
 	},
 	"folderNamesExpanded": {
 		"test": "folder-test-open-dark",
 		"tests": "folder-test-open-dark",
 		"spec": "folder-test-open-dark",
-		".vscode": "folder-vscode-open-dark"
+		".vscode": "folder-vscode-open-dark",
+		".circleci": "folder-circleci-open-dark"
 	},
 	"light": {
 		"folder": "folder-close-light",
@@ -135,6 +149,7 @@
 			"licence.md": "license-light",
 			".gitignore": "git-light",
 			".travis.yml": "travis-light",
+			"azure-pipelines.yml": "azure-pipelines-light",
 			"appveyor.yml": "appveyor-light",
 			".editorconfig": "config-light",
 			".clang-format": "config-light",
@@ -185,6 +200,8 @@
 			"d.ts": "dts-light",
 			"py": "py-light",
 			"rb": "rb-light",
+			"rs": "rust-light",
+			"go": "go-light",
 			"hs": "hs-light",
 			"idr": "idr-light",
 			"json": "json-light",
@@ -228,19 +245,30 @@
 			"psd": "image-light",
 			"svg": "image-vector-light",
 			"ai": "image-vector-light",
-			"sketch": "image-vector-light"
+			"sketch": "image-vector-light",
+			"fig": "image-vector-light",
+			"test.ts": "ts-test-light",
+			"tests.ts": "ts-test-light",
+			"spec.ts": "ts-test-light",
+			"specs.ts": "ts-test-light",
+			"test.js": "js-test-light",
+			"tests.js": "js-test-light",
+			"spec.js": "js-test-light",
+			"specs.js": "js-test-light"
 		},
 		"folderNames": {
 			"test": "folder-test-close-light",
 			"tests": "folder-test-close-light",
 			"spec": "folder-test-close-light",
-			".vscode": "folder-vscode-close-light"
+			".vscode": "folder-vscode-close-light",
+			".circleci": "folder-circleci-close-light"
 		},
 		"folderNamesExpanded": {
 			"test": "folder-test-open-light",
 			"tests": "folder-test-open-light",
 			"spec": "folder-test-open-light",
-			".vscode": "folder-vscode-open-light"
+			".vscode": "folder-vscode-open-light",
+			".circleci": "folder-circleci-open-light"
 		}
 	},
 	"iconDefinitions": {
@@ -333,6 +361,18 @@
 		},
 		"rb-light": {
 			"iconPath": "./icons/rb-light.svg"
+		},
+		"rust-dark": {
+			"iconPath": "./icons/rust-dark.svg"
+		},
+		"rust-light": {
+			"iconPath": "./icons/rust-light.svg"
+		},
+		"go-dark": {
+			"iconPath": "./icons/go-dark.svg"
+		},
+		"go-light": {
+			"iconPath": "./icons/go-light.svg"
 		},
 		"hs-dark": {
 			"iconPath": "./icons/hs-dark.svg"
@@ -460,6 +500,12 @@
 		"travis-light": {
 			"iconPath": "./icons/travis-light.svg"
 		},
+		"azure-pipelines-dark": {
+			"iconPath": "./icons/azure-pipelines-dark.svg"
+		},
+		"azure-pipelines-light": {
+			"iconPath": "./icons/azure-pipelines-light.svg"
+		},
 		"appveyor-dark": {
 			"iconPath": "./icons/appveyor-dark.svg"
 		},
@@ -525,6 +571,18 @@
 		},
 		"folder-vscode-open-light": {
 			"iconPath": "./icons/folder-vscode-open-light.svg"
+		},
+		"folder-circleci-close-dark": {
+			"iconPath": "./icons/folder-circleci-close-dark.svg"
+		},
+		"folder-circleci-close-light": {
+			"iconPath": "./icons/folder-circleci-close-light.svg"
+		},
+		"folder-circleci-open-dark": {
+			"iconPath": "./icons/folder-circleci-open-dark.svg"
+		},
+		"folder-circleci-open-light": {
+			"iconPath": "./icons/folder-circleci-open-light.svg"
 		}
 	}
 }

@@ -1,9 +1,9 @@
 {
 	"name": "theme-verdandi",
-	"version": "1.9.0",
+	"version": "1.10.0",
 	"publisher": "be5invis",
 	"engines": {
-		"vscode": "^1.26.0"
+		"vscode": "^1.33.0"
 	},
 	"displayName": "Verdandi Theme",
 	"description": "Verdandi themes for VS Code.",
