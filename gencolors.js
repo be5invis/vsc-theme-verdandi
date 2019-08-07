@@ -99,18 +99,10 @@ function generate(palette) {
 			"peekViewTitle.background": gray[0].hexaa(),
 			"peekView.border": border.hex(),
 
-			"scrollbar.shadow": color("#000000")
-				.alpha(0.1)
-				.hexaa(),
-			"scrollbarSlider.background": color("#000000")
-				.alpha(0.075)
-				.hexaa(),
-			"scrollbarSlider.activeBackground": color("#000000")
-				.alpha(0.15)
-				.hexaa(),
-			"scrollbarSlider.hoverBackground": color("#000000")
-				.alpha(0.15)
-				.hexaa(),
+			"scrollbar.shadow": gray[10].alpha(0.1).hexaa(),
+			"scrollbarSlider.background": gray[10].alpha(0.075).hexaa(),
+			"scrollbarSlider.activeBackground": gray[10].alpha(0.15).hexaa(),
+			"scrollbarSlider.hoverBackground": gray[10].alpha(0.15).hexaa(),
 
 			"editorOverviewRuler.border": "#00000000",
 			"editorGutter.modifiedBackground": blue[5].hex(),
