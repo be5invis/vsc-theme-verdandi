@@ -14,49 +14,49 @@ function omap(obj, f) {
 }
 
 function generate(themeName, palette, grades) {
-	const { gray, red, orange, green, blue, stress: stresses } = palette;
+	const { gray, user, system, red, orange, green, blue, stress: stresses } = palette;
 
 	const bg = gray[0];
-	const fg = gray[8];
+	const fgUser = user[8];
 	const stress = stresses[5];
 	const border = gray[3];
 	// token settings
 	const variable = {
 		fontStyle: "",
-		foreground: fg.hex()
+		foreground: fgUser.hex()
 	};
 	const keyword = {
 		fontStyle: "bold",
-		foreground: gray[10].hex()
+		foreground: user[10].hex()
 	};
 	const operator = keyword;
 	const weakOperator = {
 		fontStyle: "",
-		foreground: gray[10].hex()
+		foreground: system[10].hex()
 	};
 	const literal = {
 		fontStyle: "",
-		foreground: gray[10].hex()
+		foreground: system[10].hex()
 	};
 	const comment = {
 		fontStyle: "",
-		foreground: gray[6].hex()
+		foreground: user[6].hex()
 	};
 	const library = {
 		fontStyle: "",
-		foreground: gray[grades.libraryFunction].hex()
+		foreground: system[grades.libraryFunction].hex()
 	};
 	const quote = {
 		fontStyle: "italic",
-		foreground: gray[7].hex()
+		foreground: user[7].hex()
 	};
-	const user = {
+	const declare = {
 		fontStyle: "",
-		foreground: gray[grades.libraryFunction].hex()
+		foreground: system[grades.libraryFunction].hex()
 	};
-	const punct = {
+	const punctuation = {
 		fontStyle: "",
-		foreground: gray[7].hex()
+		foreground: system[7].hex()
 	};
 	const invalid = {
 		foreground: red[7].hex()
@@ -69,18 +69,18 @@ function generate(themeName, palette, grades) {
 		palette: omap(palette, (k, g) => g.map(c => c.hex())),
 		colors: {
 			focusBorder: stress.hex(),
-			foreground: fg.hex(),
+			foreground: fgUser.hex(),
 			errorForeground: red[6].hex(),
 			"editor.background": bg.hex(),
-			"editor.foreground": fg.hex(),
+			"editor.foreground": fgUser.hex(),
 			"editor.lineHighlightBackground": gray[1].hex(),
 			"editorCursor.foreground": stress.hex(),
 			"editorLineNumber.foreground": gray[5].hex(),
 			"editorActiveLineNumber.foreground": gray[10].hex(),
 
-			"editor.selectionBackground": stresses[2].hexaa(),
+			"editor.selectionBackground": stress.alpha(3 / 8).hexaa(),
 			"editor.selectionHighlightBackground": stresses[1].hexaa(),
-			"editor.inactiveSelectionBackground": gray[3].hexaa(),
+			"editor.inactiveSelectionBackground": gray[5].alpha(3 / 8).hexaa(),
 
 			"editorError.foreground": red[8].hex(),
 			"editorWarning.foreground": orange[8].hex(),
@@ -145,6 +145,7 @@ function generate(themeName, palette, grades) {
 			"list.warningForeground": orange[8].hex(),
 
 			"gitDecoration.modifiedResourceForeground": blue[8].hex(),
+			"gitDecoration.addedResourceForeground": green[8].hex(),
 			"gitDecoration.untrackedResourceForeground": green[8].hex(),
 			"gitDecoration.deletedResourceForeground": red[8].hex(),
 			"gitDecoration.conflictingResourceForeground": red[8].hex(),
@@ -162,17 +163,17 @@ function generate(themeName, palette, grades) {
 			"button.foreground": stresses[0].hex(),
 			"button.hoverBackground": stresses[7].hex(),
 
-			"badge.background": stress.hex(),
+			"badge.background": stresses[grades.badgeBackground].hex(),
 			"badge.foreground": gray[grades.badgeForeground].hex(),
 			"activityBar.background": gray[4].hex(),
 			"activityBar.foreground": gray[9].hex(),
 
 			"statusBar.background": gray[3].hex(),
-			"statusBar.foreground": fg.hex(),
+			"statusBar.foreground": fgUser.hex(),
 			"statusBar.noFolderBackground": gray[3].hex(),
-			"statusBar.noFolderForeground": fg.hex(),
+			"statusBar.noFolderForeground": fgUser.hex(),
 			"statusBar.debuggingBackground": gray[3].hex(),
-			"statusBar.debuggingForeground": fg.hex(),
+			"statusBar.debuggingForeground": fgUser.hex(),
 
 			"panel.border": border.hex(),
 			"panelTitle.activeBorder": stress.hex(),
@@ -225,7 +226,7 @@ function generate(themeName, palette, grades) {
 					"string.link.md",
 					"meta.brace"
 				],
-				settings: punct
+				settings: punctuation
 			},
 			{
 				name: "JavaScript string interpolation ${}",
@@ -279,7 +280,7 @@ function generate(themeName, palette, grades) {
 					"entity.name.tag.table",
 					"meta.structure.dictionary.json string.quoted.double.json"
 				],
-				settings: user
+				settings: declare
 			},
 			{
 				name: "Keyword",
@@ -323,7 +324,7 @@ function generate(themeName, palette, grades) {
 			{
 				name: "Preprocessor",
 				scope: "meta.preprocessor",
-				settings: user
+				settings: declare
 			},
 			{
 				name: "Library",
@@ -347,7 +348,7 @@ function generate(themeName, palette, grades) {
 					"entity.name.type.md",
 					"beginning.punctuation"
 				],
-				settings: user
+				settings: declare
 			},
 			{
 				name: "Markdown titles",
@@ -368,12 +369,12 @@ function generate(themeName, palette, grades) {
 					"meta.link.inline",
 					"meta.image.inline"
 				],
-				settings: user
+				settings: declare
 			},
 			{
 				name: "Makefile Variables",
 				scope: ["variable.language.makefile", "variable.other.makefile"],
-				settings: user
+				settings: declare
 			},
 			{
 				scope: ["markup.italic"],
@@ -400,7 +401,7 @@ function generate(themeName, palette, grades) {
 			{
 				name: "CSS Property",
 				scope: ["meta.property-name.css"],
-				settings: user
+				settings: declare
 			}
 		]
 	};

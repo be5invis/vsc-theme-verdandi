@@ -54,21 +54,25 @@
 		"cc": "cpp-dark",
 		"cxx": "cpp-dark",
 		"js": "js-dark",
-		"jsx": "js-dark",
+		"jsx": "jsx-dark",
 		"mjs": "js-dark",
 		"md": "md-dark",
 		"mkd": "md-dark",
 		"markdown": "md-dark",
 		"ts": "ts-dark",
-		"tsx": "ts-dark",
+		"tsx": "tsx-dark",
 		"d.ts": "dts-dark",
 		"py": "py-dark",
 		"rb": "rb-dark",
 		"rs": "rust-dark",
 		"go": "go-dark",
 		"hs": "hs-dark",
+		"ml": "ml-dark",
+		"mli": "mli-dark",
 		"idr": "idr-dark",
 		"json": "json-dark",
+		"java": "java-dark",
+		"lisp": "lambda-dark",
 		"cs": "cs-dark",
 		"fs": "fs-dark",
 		"fsx": "fs-dark",
@@ -111,6 +115,14 @@
 		"ai": "image-vector-dark",
 		"sketch": "image-vector-dark",
 		"fig": "image-vector-dark",
+		"sh": "shell-dark",
+		"bash": "shell-dark",
+		"zsh": "shell-dark",
+		"fish": "shell-dark",
+		"bat": "batch-dark",
+		"cmd": "batch-dark",
+		"wmf": "batch-dark",
+		"ps1": "batch-dark",
 		"test.ts": "ts-test-dark",
 		"tests.ts": "ts-test-dark",
 		"spec.ts": "ts-test-dark",
@@ -190,21 +202,25 @@
 			"cc": "cpp-light",
 			"cxx": "cpp-light",
 			"js": "js-light",
-			"jsx": "js-light",
+			"jsx": "jsx-light",
 			"mjs": "js-light",
 			"md": "md-light",
 			"mkd": "md-light",
 			"markdown": "md-light",
 			"ts": "ts-light",
-			"tsx": "ts-light",
+			"tsx": "tsx-light",
 			"d.ts": "dts-light",
 			"py": "py-light",
 			"rb": "rb-light",
 			"rs": "rust-light",
 			"go": "go-light",
 			"hs": "hs-light",
+			"ml": "ml-light",
+			"mli": "mli-light",
 			"idr": "idr-light",
 			"json": "json-light",
+			"java": "java-light",
+			"lisp": "lambda-light",
 			"cs": "cs-light",
 			"fs": "fs-light",
 			"fsx": "fs-light",
@@ -247,6 +263,14 @@
 			"ai": "image-vector-light",
 			"sketch": "image-vector-light",
 			"fig": "image-vector-light",
+			"sh": "shell-light",
+			"bash": "shell-light",
+			"zsh": "shell-light",
+			"fish": "shell-light",
+			"bat": "batch-light",
+			"cmd": "batch-light",
+			"wmf": "batch-light",
+			"ps1": "batch-light",
 			"test.ts": "ts-test-light",
 			"tests.ts": "ts-test-light",
 			"spec.ts": "ts-test-light",
@@ -332,6 +356,12 @@
 		"js-light": {
 			"iconPath": "./icons/js-light.svg"
 		},
+		"jsx-dark": {
+			"iconPath": "./icons/jsx-dark.svg"
+		},
+		"jsx-light": {
+			"iconPath": "./icons/jsx-light.svg"
+		},
 		"md-dark": {
 			"iconPath": "./icons/md-dark.svg"
 		},
@@ -343,6 +373,12 @@
 		},
 		"ts-light": {
 			"iconPath": "./icons/ts-light.svg"
+		},
+		"tsx-dark": {
+			"iconPath": "./icons/tsx-dark.svg"
+		},
+		"tsx-light": {
+			"iconPath": "./icons/tsx-light.svg"
 		},
 		"dts-dark": {
 			"iconPath": "./icons/dts-dark.svg"
@@ -380,6 +416,18 @@
 		"hs-light": {
 			"iconPath": "./icons/hs-light.svg"
 		},
+		"ml-dark": {
+			"iconPath": "./icons/ml-dark.svg"
+		},
+		"ml-light": {
+			"iconPath": "./icons/ml-light.svg"
+		},
+		"mli-dark": {
+			"iconPath": "./icons/mli-dark.svg"
+		},
+		"mli-light": {
+			"iconPath": "./icons/mli-light.svg"
+		},
 		"idr-dark": {
 			"iconPath": "./icons/idr-dark.svg"
 		},
@@ -391,6 +439,18 @@
 		},
 		"json-light": {
 			"iconPath": "./icons/json-light.svg"
+		},
+		"java-dark": {
+			"iconPath": "./icons/java-dark.svg"
+		},
+		"java-light": {
+			"iconPath": "./icons/java-light.svg"
+		},
+		"lambda-dark": {
+			"iconPath": "./icons/lambda-dark.svg"
+		},
+		"lambda-light": {
+			"iconPath": "./icons/lambda-light.svg"
 		},
 		"cs-dark": {
 			"iconPath": "./icons/cs-dark.svg"
@@ -487,6 +547,18 @@
 		},
 		"image-vector-light": {
 			"iconPath": "./icons/image-vector-light.svg"
+		},
+		"shell-dark": {
+			"iconPath": "./icons/shell-dark.svg"
+		},
+		"shell-light": {
+			"iconPath": "./icons/shell-light.svg"
+		},
+		"batch-dark": {
+			"iconPath": "./icons/batch-dark.svg"
+		},
+		"batch-light": {
+			"iconPath": "./icons/batch-light.svg"
 		},
 		"git-dark": {
 			"iconPath": "./icons/git-dark.svg"
