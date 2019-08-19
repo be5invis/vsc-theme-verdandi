@@ -41,11 +41,7 @@
 	},
 	"dependencies": {},
 	"scripts": {
-		"prepack": "node generate"
-	},
-	"__metadata": {
-		"id": "d2149167-a7c8-4dea-ad4e-8e7a7fc63f35",
-		"publisherId": "8c148d69-cbc6-480b-bd8b-a42715926324",
-		"publisherDisplayName": "be5invis"
+		"build": "node src/generate",
+		"prepack": "node src/generate"
 	}
 }

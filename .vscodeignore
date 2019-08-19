@@ -2,3 +2,5 @@
 *.ai
 .vscode/*
 samples/*
+node_modules
+src
