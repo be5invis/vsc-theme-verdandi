@@ -1,6 +1,6 @@
 {
 	"name": "theme-verdandi",
-	"version": "1.10.1",
+	"version": "1.11.1",
 	"publisher": "be5invis",
 	"engines": {
 		"vscode": "^1.33.0"
@@ -45,7 +45,7 @@
 	},
 	"__metadata": {
 		"id": "d2149167-a7c8-4dea-ad4e-8e7a7fc63f35",
-		"publisherDisplayName": "be5invis",
-		"publisherId": "8c148d69-cbc6-480b-bd8b-a42715926324"
+		"publisherId": "8c148d69-cbc6-480b-bd8b-a42715926324",
+		"publisherDisplayName": "be5invis"
 	}
 }

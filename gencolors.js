@@ -13,8 +13,8 @@ function omap(obj, f) {
 	return o1;
 }
 
-function generate(palette) {
-	const { gray, red, green, blue, stress: stresses } = palette;
+function generate(themeName, palette, grades) {
+	const { gray, red, orange, green, blue, stress: stresses } = palette;
 
 	const bg = gray[0];
 	const fg = gray[8];
@@ -44,7 +44,7 @@ function generate(palette) {
 	};
 	const library = {
 		fontStyle: "",
-		foreground: gray[10].hex()
+		foreground: gray[grades.libraryFunction].hex()
 	};
 	const quote = {
 		fontStyle: "italic",
@@ -52,7 +52,7 @@ function generate(palette) {
 	};
 	const user = {
 		fontStyle: "",
-		foreground: gray[10].hex()
+		foreground: gray[grades.libraryFunction].hex()
 	};
 	const punct = {
 		fontStyle: "",
@@ -65,7 +65,7 @@ function generate(palette) {
 
 	return {
 		$schema: "vscode://schemas/color-theme",
-		name: "Railgun",
+		name: themeName,
 		palette: omap(palette, (k, g) => g.map(c => c.hex())),
 		colors: {
 			focusBorder: stress.hex(),
@@ -81,6 +81,18 @@ function generate(palette) {
 			"editor.selectionBackground": stresses[2].hexaa(),
 			"editor.selectionHighlightBackground": stresses[1].hexaa(),
 			"editor.inactiveSelectionBackground": gray[3].hexaa(),
+
+			"editorError.foreground": red[8].hex(),
+			"editorWarning.foreground": orange[8].hex(),
+			"editorInfo.foreground": blue[8].hex(),
+			"editorHint.foreground": blue[8].hex(),
+
+			"notification.errorBackground": red[4].hex(),
+			"notification.errorForeground": red[8].hex(),
+			"notification.infoBackground": blue[4].hex(),
+			"notification.infoForeground": blue[8].hex(),
+			"notification.warningBackground": orange[4].hex(),
+			"notification.warningForeground": orange[8].hex(),
 
 			"debugToolBar.background": gray[2].hexaa(),
 			"editorWidget.background": gray[2].hexaa(),
@@ -105,9 +117,15 @@ function generate(palette) {
 			"scrollbarSlider.hoverBackground": gray[10].alpha(0.15).hexaa(),
 
 			"editorOverviewRuler.border": "#00000000",
-			"editorGutter.modifiedBackground": blue[5].hex(),
-			"editorGutter.addedBackground": green[5].hex(),
-			"editorGutter.deletedBackground": red[5].hex(),
+			"editorGutter.modifiedBackground": blue[3].hex(),
+			"editorGutter.addedBackground": green[3].hex(),
+			"editorGutter.deletedBackground": red[3].hex(),
+			"editorOverviewRuler.modifiedForeground": blue[3].hex(),
+			"editorOverviewRuler.addedForeground": green[3].hex(),
+			"editorOverviewRuler.deletedForeground": red[3].hex(),
+			"editorOverviewRuler.infoForeground": blue[5].hex(),
+			"editorOverviewRuler.warningForeground": orange[5].hex(),
+			"editorOverviewRuler.errorForeground": red[5].hex(),
 			"diffEditor.removedTextBackground": red[5].alpha(0.15).hexaa(),
 			"diffEditor.insertedTextBackground": green[5].alpha(0.1).hexaa(),
 
@@ -123,13 +141,15 @@ function generate(palette) {
 			"list.inactiveSelectionForeground": gray[10].hex(),
 			"list.activeSelectionForeground": gray[10].hex(),
 			"list.focusForeground": gray[10].hex(),
+			"list.errorForeground": red[8].hex(),
+			"list.warningForeground": orange[8].hex(),
 
 			"gitDecoration.modifiedResourceForeground": blue[8].hex(),
 			"gitDecoration.untrackedResourceForeground": green[8].hex(),
 			"gitDecoration.deletedResourceForeground": red[8].hex(),
 			"gitDecoration.conflictingResourceForeground": red[8].hex(),
 
-			"dropdown.background": gray[0].hex(),
+			"dropdown.background": gray[grades.dropdownBackground].hex(),
 			"dropdown.border": border.hex(),
 			"dropdown.foreground": gray[8].hex(),
 
@@ -143,7 +163,7 @@ function generate(palette) {
 			"button.hoverBackground": stresses[7].hex(),
 
 			"badge.background": stress.hex(),
-			"badge.foreground": gray[2].hex(),
+			"badge.foreground": gray[grades.badgeForeground].hex(),
 			"activityBar.background": gray[4].hex(),
 			"activityBar.foreground": gray[9].hex(),
 
@@ -157,10 +177,10 @@ function generate(palette) {
 			"panel.border": border.hex(),
 			"panelTitle.activeBorder": stress.hex(),
 
-			"titleBar.activeBackground": gray[8].hex(),
-			"titleBar.activeForeground": gray[1].hex(),
+			"titleBar.activeBackground": gray[grades.titleBarBackground].hex(),
+			"titleBar.activeForeground": gray[grades.titleBarForeground].hex(),
 			"titleBar.inactiveBackground": gray[6].hex(),
-			"titleBar.inactiveForeground": gray[2].hex(),
+			"titleBar.inactiveForeground": gray[1].hex(),
 
 			"breadcrumb.foreground": comment.foreground,
 			"breadcrumb.focusForeground": quote.foreground,
