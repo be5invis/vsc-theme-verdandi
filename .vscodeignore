@@ -1,8 +1,7 @@
 .gitignore
-*.ai
-.vscode/*
-samples/*
-node_modules
-src
+.vscode/
+samples/
+node_modules/
+src/
 .prettierrc.yaml
 .npmignore
